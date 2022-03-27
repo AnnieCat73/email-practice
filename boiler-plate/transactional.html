@@ -76,8 +76,10 @@
     }
 
     /*Default styles for links and hovers*/
-    a {color: #ddd; font-weight: bold; }
-    a:hover {color: #333; text-decoration: none; }
+    a {color: #3e7edf; font-weight: bold; }
+    a:hover {color: #fd6350 !important; text-decoration: none; }
+    a.button { color: white !important; }
+    a.button:hover { background-color: black !important; }
 
     /*Responsive styles*/
     @media screen and (max-width: 600px) {
@@ -93,7 +95,7 @@
   </style>
 </head>
 <body id="body" style="margin:0 !important; padding: 0 !important;">
-  <div role="article" aria-roledescription="email" aria-label="Your receipt for your recent order with Blobby Blobs" lang="en" dir="ltr" style="font-size:medium; font-size:max(16px, 1rem)">
+  <div role="article" aria-roledescription="email" aria-label="Your receipt for your recent order with Blobby Blobs" lang="en" dir="ltr" style="font-size:medium; font-size:max(16px, 1rem);">
     
     <div style="display: none; max-height: 0px; overflow: hidden;">
       JobMatching - introducing more access, opportunity, and flexibility to the place of work than ever before - and top talent is reaping the benefits......
@@ -109,9 +111,38 @@
     <td>
     <![endif]-->
       
-      <div style="color: #000000; font-family: sans-serif; font-size: 18px; font-weight: normal; line-height: 1.8; margin: 1rem auto; max-width: 600px; padding: 0 10px;">
-        
+    <div style="color: #000000; font-family: sans-serif; font-size: 18px; font-weight: normal; line-height: 1.8; margin: 1rem auto; max-width: 600px; padding: 60px 10px;">
+      <center><img src="#" alt="" width="100"></center>
+
+      <p style="margin:0;text-align: center;">Hi, Annie,<br><br>
+        Thanks for your order! We're busy getting it ready to ship and will sent you tracking information as soon as it's out the door.<br><br>
+        You can also <a href="#" style="color:#3e7edf">check the status of your order</a>  if needed.<br><br>
+        Here's a copy of your receipt for your own records.
+      </p>
+      <p style="margin:0 0 20px;text-align:center;">
+        <strong>Need help with your order?</strong><br><br>
+        Chat with our customer support team 24/7 using the link below.
+      </p>
+      <center>
+        <a class="button" href="https://rodriguezcommaj.com/" style="background: blue; text-decoration: none; padding: 15px 25px; color: white; border-radius: 8px; display:inline-block; mso-padding-alt: 0;text-underline-color: blue"><!--[if mso]><i style="letter-spacing: 25px;mso-font-width:-100%;mso-text-raise:30pt">&nbsp;</i><![endif]--><span style="mso-text-raise:15pt;">Contact Us Today</span><!--[if mso]><i style="letter-spacing: 25px;mso-font-width:-100%">&nbsp;</i><![endif]-->
+        </a>
+      </center>
+
+      
+      <div style="margin: 100px 0 0 0;">
+        <center><img src="#" alt="" width="60"></center>
+        <p style="color: #888888; line-height: 1; margin: 20px 0 0 0; text-align:center;">
+          Thanks for shopping Blobbyblobs!<br><br>
+          &copy;2022 BlobbyBlobs<br><br>
+           1234 E. Blob Street, Blobsville, MI 56789
+        </p>
       </div>
+
+      
+      
+
+      
+    </div>
     <!--[if (gte mso 9)] | (IE)]> 
     </td>
     </tr> 
