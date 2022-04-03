@@ -78,10 +78,39 @@
     a:hover {color: #333; text-decoration: none; }
 
     /*Responsive styles*/
-    @media screen and (max-width: 600px) {
+    
 
+    @media screen and (max-width: 599px) {
+
+      .container {
+        width: 100% !important;
+      }
+      .col-lge {
+        
+        width: 100% !important;
+        text-align: left !important;
+        
+      }
+
+      .col.sml {
+        width: 100% !important;
+      }
+
+      .font {
+        font-size: 14px !important;
+      }
     }
 
+    @media screen and (min-width: 461px) {
+      .three-col .column {
+        max-width: 33.3% !important;
+      }
+
+      .two-col .column {
+        max-width: 50% !important;
+      }
+    }
+    /*CAN BE IMPROVED*/
     /*Dark mode styles*/
     @media (prefers-color-scheme:dark) {
       .dark-background:not([class^="x_"]) { background-color:#111 !important; }
@@ -90,7 +119,7 @@
 
   </style>
 </head>
-<body id="body" style="margin:0 !important; padding: 0 !important;word-spacing:normal;background-color:#ffffff;">
+<body class="dark-background" id="body" style="margin:0 !important; padding: 0 !important;word-spacing:normal;background-color:#ffffff;">
   <div role="article" aria-roledescription="email" aria-label="Your receipt for your recent order with Harry's" lang="en" dir="ltr" style="-webkit-text-size-adjust:100%;-ms-text-size-adjust:100%;font-size:medium; font-size:max(16px, 1rem);background-color:#ddd;">
     
     <div style="display: none; max-height: 0px; overflow: hidden;">
@@ -104,10 +133,10 @@
     <!--[if (gte mso 9)] | (IE)]> 
     <table cellspacing="0" cellpadding="0" border="3" width="603" align="center" role="presentation">
     <tr>
-    <td style="padding: 60px 10px">
+    <td style="padding: 30px 10px 10px 10px">
     <![endif]-->
-    <div style="background-color:#ffffff;width:100%; min-width:200px; max-width:603px;margin: 0rem auto; border: 3px solid #873e23;padding:60px 10px;font-family:Arial, Helvetica, sans-serif;">
-      <h1 style="margin:0; color:#00334e;font-size:38px;line-height: 28px;font-weight:bold; text-transform:uppercase;text-align:center;">Harry's</h1><br><br>
+    <div class="container" style="background-color:#ffffff;width:100%; min-width:200px; max-width:603px;margin: 0rem auto; border: 3px solid #873e23;padding:30px 10px 10px 10px;font-family:Arial, Helvetica, sans-serif;word-wrap: break-word;">
+      <h1 style="margin:0 0 20px; color:#00334e;font-size:38px;line-height: 28px;font-weight:bold; text-transform:uppercase;text-align:center;">Harry's</h1>
       <table width="100%" border="0" cellspacing="0" cellpadding="0" style="text-align:center;">
         <tr>
           <td align="center" style="padding:0;">
@@ -132,10 +161,10 @@
         <tr>
         <td style="padding: 30px 10px">
         <![endif]-->
-          <div class="col-lge" style="display:inline-block;width:100%;max-width:350px;vertical-align: top;text-align: center;font-family: Arial, Helvetica, sans-serif;font-size:16px;color:#756c6c;padding:15px;">
+          <div class="col-lge" style="display:inline-block;width:100%;max-width:350px;vertical-align: top;text-align: center;font-family: Arial, Helvetica, sans-serif;font-size:16px;color:#756c6c;padding:15px;word-wrap: break-word;">
             <h3 style="margin:0 0 15px;font-family:Georgia, 'Times New Roman', Times, serif;font-size: 19px;font-weight:bold;line-height:24px;color:#00334e;">Thank you for your order</h3>
-            <p style="margin:0 0 20px;font-family:Arial, Helvetica, sans-serif;font-size:14px;font-weight:normal;line-height:28px; color:#6c6c6c;">Your order number is <span style="margin:0; font-size:16px;font-weight:bold;color:#9a5f5d;">AB123C4D5E6</span>, and is estimated to
-            arrive around <span style="margin:0; font-size:16px;font-weight:bold;color:#9a5f5d;">February 24, 2015 - March 3, 2015</span>.</p>
+            <p style="margin:0 0 20px;font-family:Arial, Helvetica, sans-serif;font-size:14px;font-weight:normal;line-height:28px; color:#6c6c6c;">Your order number is <span class="font" style="margin:0; font-size:16px;font-weight:bold;color:#9a5f5d;">AB123C4D5E6</span>, and is estimated to
+            arrive around <span class="font" style="margin:0; font-size:16px;font-weight:bold;color:#9a5f5d;">February 24, 2015 - March 3, 2015</span>.</p>
             <p style="margin:0;font-family:Arial, Helvetica, sans-serif;font-size:14px;font-weight:normal;line-height:28px; color:#6c6c6c;">*Please note this order may change your life.</p>
             <p style="margin:0;font-family:Arial, Helvetica, sans-serif;font-size:14px;font-weight:normal;line-height:28px; color:#6c6c6c;">**Ok maybe not your life. But definitely your face.</p>
 
@@ -246,7 +275,7 @@
             <p style="margin:0;font-weight:normal;">XXX XXXXXXXXXXXXXXXX ST</p><br>
             <p style="margin:0;font-weight:normal;">XXXXXXXXXX, XXX, 12345</p>
             <p style="margin:0;font-weight:normal;">United States</p>
-            <p style="margin:0;font-weight:normal;">T: <a href="https://www.example.com/" style="color: #1865d3;text-decoration: underline;font-weight:normal;">1234567890</a></p>
+            <p style="margin:0;font-weight:normal;">T: <a href="https://www.example.com/" style="color: #286ad3;text-decoration: underline;font-weight:normal;">1234567890</a></p>
           </td>
           <td style="padding:0px;font-size:0;text-align:left;background-color: #f4f4f4;width:180px;font-family: Arial, Helvetica, sans-serif;font-size:14px;color:#3b5462;padding:0px;">
             <h4 style="margin:0;color:#103c50;font-size:15px;font-weight:bold;">Shipping Method</h4>
@@ -265,13 +294,21 @@
           </td>
         </tr>
       </table>
-     
-
-       
+      <table width="100%" border="0" cellspacing="0" cellpadding="0">
+        <tr>
+          <td style="background-color: #f4f4f4;padding:15px 0;text-align:center;">
+            <p style="margin:0;font-family: Arial, Helvetica, sans-serif;font-size:13px;color:#909097;">Call us at <a href="https://example.com/" style="color:#286ad3;text-decoration: underline;" >(888) 212-6855</a> between 10am-6px EST. Or email us at <a href="https://example.com/" style="color:#7a3623;text-decoration:none;">help@harry's.com</a></p>
+          </td>
+        </tr>
+      </table>
       
-          
-        
-      
+      <table width="100%" border="0" cellspacing="0" cellpadding="0">
+        <tr>
+          <td style="text-align:center;padding:20px 0 10px;">
+            <p style="margin:0"><a href="http://www.facebook.com/" style="text-decoration:none;color:#757080;">Harry's.com </a><span style="color:#757080;">|</span> <a href="http://www.twitter.com/" style="text-decoration:none;color:#757080;"> Facebook </a><span style="color:#757080;">|</span><a href="http://www.twitter.com/" style="text-decoration:none;color:#757080;"> Twitter</a></p>
+          </td>
+        </tr>
+      </table>
     </div>
     <!--[if (gte mso 9)] | (IE)]> 
     </td>
