@@ -74,8 +74,8 @@
     }
 
     /*Default styles for links and hovers*/
-    a {color: #ddd; font-weight: bold; }
-    a:hover {color: #333; text-decoration: none; }
+    a {color: #ddd !important; font-weight: bold !important; }
+    a:hover {color: #333 !important; text-decoration: none!important; }
 
     /*Responsive styles*/
     @media screen and (max-width: 600px) {
@@ -84,9 +84,11 @@
 
     /*Dark mode styles*/
     @media (prefers-color-scheme:dark) {
-      .dark-background:not([class^="x_"]) { background-color:#111 !important; }
+      .dark-background:not([class^="x_"]) { background-color:#111 !important}
+      .dark-text:not([class^="x_"]) { color:#fff !important}
+      .dark-button:not([class^="x_"]) { color:#000 !important}
     }
-    [data-ogsb] .dark-blue { color:#5f9fff !important; }
+    [data-ogsb] .dark-text { color:#fff !important; }
 
   </style>
 </head>
@@ -109,7 +111,7 @@
           <tr>
           <td style="padding:20px 0;">
           <![endif]-->
-          <div class="outer" style="width:96%;max-width:664px;margin:20px auto;">
+          <div class="dark-background" style="width:96%;max-width:664px;margin:20px auto;">
             <!--single col hero-->
             <table role="presentation" style="width:100%;border:0;border-spacing:0;">
               <tr>
@@ -119,16 +121,16 @@
               </tr>
               <tr>
                 <td align="center" valign="middle" style="padding:110px 30px;background-image: url('https://i.postimg.cc/FzGsyM74/socks.jpg');background-size: cover;background-position: center;">
-                  <h1 style="margin: 0 0 20px ;font-family: Arial, Helvetica, sans-serif;text-transform: capitalize; text-shadow: 1px 1px #444444;">The perfect way to style in 2020</h1>
-                  <a href="https://example.com/" style="font-family: sans-serif;font-size:15px;display: inline-block;text-transform: uppercase; letter-spacing: 0.5px; background-color:#fde148;color: #000000;padding:10px 20px;text-decoration:none; border-radius: 3px;font-weight:bold;">Buy new collection here</a>
+                  <h1 class="dark-text" style="margin: 0 0 20px ;font-family: Arial, Helvetica, sans-serif;font-size: 32px;font-weight:bold;text-transform: capitalize; text-shadow: 1px 1px #444444;color:#ffffff;">The perfect way to style in 2020</h1>
+                  <a class="dark-button" href="https://example.com/" style="font-family: sans-serif;font-size:15px;display: block;text-transform: uppercase; letter-spacing: 0.5px; background-color:#fde148;color: #000000;padding:10px 20px;text-decoration:none; border-radius: 3px;font-weight:bold;width:50%;">Buy new collection here</a>
                 </td>
               </tr>
             </table>
             <div class="spacer" style="line-height:26px;height:26px;mso-line-height-rule:exactly;">&nbsp;</div>
-            <table role="presentation" style="width:100%;border:0;border-spacing:0;">
+            <table class="dark-background" role="presentation" style="width:100%;border:0;border-spacing:0;">
               <tr>
                 <td align="center" style="text-align:center;">
-                  <h2 style="margin:0;font-family:sans-serif;font-size:26px;color:#000000;font-weight:bold;text-transform:capitalize;">New arrivals</h2>
+                  <h2 class="dark-text" style="margin:0;font-family:sans-serif;font-size:26px;color:#000000;font-weight:bold;text-transform:capitalize;">New arrivals</h2>
                 </td>
               </tr>
             </table>
@@ -142,20 +144,20 @@
               <div class="column" style="width:100%;max-width:330px;display:inline-block;vertical-align:middle;">
                 <div style="padding:10px;text-align:center;">
                   <p style="margin:0 0 30px;font-family: Arial, Helvetica, sans-serif;font-size:14px;line-height:18px;outline:1px solid rgb(185, 182, 182);"><img src="https://purepng.com/public/uploads/large/wrist-watch-ogx.png" width="310" style="display: block;width:310px;max-width:100%;height: auto;" alt="Watch"></p>
-                  <p style="margin:0 0 20px;font-family: sans-serif;font-size:20px;font-weight:bold;color:#000000;">Watch</p>
-                  <p style="margin:0 0 20px;font-family: sans-serif;font-size:15px;font-weight:normal;color:#000000;">$399</p>
+                  <p class="dark-text" style="margin:0 0 20px;font-family: sans-serif;font-size:20px;font-weight:bold;color:#000000;">Watch</p>
+                  <p class="dark-text" style="margin:0 0 20px;font-family: sans-serif;font-size:15px;font-weight:normal;color:#000000;">$399</p>
                 </div>
               </div>
               <!--[if mso]>
               </td>
-              <td style="width:50%;padding:10px;" valign="middle">
+              <td style="width:50%;padding:10px;" valign="top">
               <![endif]-->
-              <div class="column" style="width:100%;max-width:330px;display:inline-block;vertical-align:middle;">
+              <div class="column" style="width:100%;max-width:330px;display:inline-block;vertical-align:top;">
                 <div style="padding:10px;text-align:center;">
                   <p style="margin:0 0 30px;font-family: Arial, Helvetica, sans-serif;font-size:14px;line-height:18px;outline:1px solid rgb(185, 182, 182);"><img src="https://5.imimg.com/data5/MG/HF/MY-20432762/casual-slip-on-shoes-500x500.png" width="310" style="display: block;width:310px;max-width:100%;height: auto;" alt="Casual Shoes"></p>
-                  <p style="margin:0 0 2
+                  <p class="dark-text" style="margin:0 0 2
                   0px;font-family: sans-serif;font-size:20px;font-weight:bold;color:#000000;">Casual Shoes</p>
-                  <p style="margin:0 0 20px;font-family: sans-serif;font-size:15px;font-weight:normal;color:#000000;">$99</p>
+                  <p class="dark-text" style="margin:0 0 20px;font-family: sans-serif;font-size:15px;font-weight:normal;color:#000000;">$99</p>
                 </div>
               </div>
               <!--[if mso]>
@@ -174,21 +176,21 @@
               <div class="column" style="width:100%;max-width:330px;display:inline-block;vertical-align:middle;">
                 <div style="padding:10px;text-align:center;">
                   <p style="margin:0 0 30px;font-family: Arial, Helvetica, sans-serif;font-size:14px;line-height:18px;outline:1px solid rgb(185, 182, 182);"><img src="https://images-na.ssl-images-amazon.com/images/I/41xCWDx-OyL.jpg" width="310" style="display: block;width:310px;max-width:100%;height: auto;" alt="Casual Shirt"></p>
-                  <p style="margin:0 0 20px;font-family: sans-serif;font-size:20px;font-weight:bold;color:#000000;">Casual Shirt</p>
-                  <p style="margin:0 0 20px;font-family: sans-serif;font-size:15px;font-weight:normal;color:#000000;">$39</p>
+                  <p class="dark-text" style="margin:0 0 20px;font-family: sans-serif;font-size:20px;font-weight:bold;color:#000000;">Casual Shirt</p>
+                  <p class="dark-text" style="margin:0 0 20px;font-family: sans-serif;font-size:15px;font-weight:normal;color:#000000;">$39</p>
                 </div>
               </div>
               <!--[if mso]>
               </td>
-              <td style="width:50%;padding:10px;" valign="middle">
+              <td style="width:50%;padding:10px;" valign="top">
               <![endif]-->
-              <div class="column" style="width:100%;max-width:330px;display:inline-block;vertical-align:middle;">
+              <div class="column" style="width:100%;max-width:330px;display:inline-block;vertical-align:top;">
                 <div style="padding:10px;text-align:center;">
                   <p style="margin:0 0 30px;font-family: Arial, Helvetica, sans-serif;font-size:14px;line-height:18px;outline:1px solid rgb(185, 182, 182);"><img src="https://images-na.ssl-images-amazon.com/images/I/418Rpb-rFYL.jpg
                     https://i.postimg.cc/FzGsyM74/socks.jpg" width="310" style="display: block;width:310px;max-width:100%;height: auto;" alt="Jeans"></p>
-                  <p style="margin:0 0 2
+                  <p class="dark-text" style="margin:0 0 2
                   0px;font-family: sans-serif;font-size:20px;font-weight:bold;color:#000000;">Jeans</p>
-                  <p style="margin:0 0 20px;font-family: sans-serif;font-size:15px;font-weight:normal;color:#000000;">$999</p>
+                  <p class="dark-text" style="margin:0 0 20px;font-family: sans-serif;font-size:15px;font-weight:normal;color:#000000;">$999</p>
                 </div>
               </div>
               <!--[if mso]>
@@ -199,14 +201,32 @@
             </div>
             <div class="spacer" style="line-height:1px;height:1px;mso-line-height-rule:exactly;background-color: #c5bdbd;">&nbsp;</div>
             <table role="presentation" style="width:100%;border:0;border-spacing:0;">
-              <p>Stay Connected</p>
-
+              <tr>
+                <td style="padding:30px 0;text-align:center;">
+                  <p class="dark-text" style="margin:0;font-family: sans-serif;font-size:18px;font-weight: normal;color:#000000;">Stay Connected</p>
+                </td>
+              </tr>
+              <tr>
+                <td valign="middle" style="text-align:center;font-family: Arial, Helvetica, sans-serif;font-size:14px;">
+                  <p style="margin:0 15px 0px;padding: 0 0 20px;">
+                    <a style="display:inline-block;color:#ffffff;text-decoration:none;padding:5px 10px;background-color:#4b69b0;font-weight:normal;border-radius: 3px;margin: 0 0 15px;" href="https://www.example.com/">Facebook</a>
+                    <a style="display:inline-block;color:#ffffff;text-decoration:none;padding:5px 10px;background-color:#e83f3a;font-weight:normal;border-radius: 3px;margin: 0 0 15px;" href="https://www.example.com/">YouTube</a>
+                    <a style="display:inline-block;color:#ffffff;text-decoration:none;padding:5px 10px;background-color:#37b1e1;font-weight:normal;border-radius: 3px;margin: 0 0 15px;" href="https://www.example.com/">Twitter</a>
+                    <a style="display:inline-block;color:#ffffff;text-decoration:none;padding:5px 10px;background-color:#e83f3a;font-weight:normal;border-radius: 3px;margin: 0 0 15px;" href="https://www.example.com/">Google Plus</a>
+                  </p>
+                </td>
+              </tr>
+              <tr>
+                <td style="text-align:center;padding: 0 0 30px;">
+                  <p class="dark-text" style="margin:0;font-family:sans-serif;font-size:15px;font-weight:normal;line-height:18px;color: #444444;">If you need any help, Please email us at <a class="dark-text" href="https://www.example.com/" style="text-decoration:none;color:#444444;">lifetimecarexyz@gmail.com</a></p>
+                </td>
+              </tr>
+              <tr>
+                <td style="text-align:center;padding: 0 0 20px;">
+                  <h3 class="dark-text" style="margin:0;font-family:sans-serif;font-size:20px;font-weight:bold;line-height:18px;color: #000000;text-transform: uppercase;">The Webstorium</h3>
+                </td>
+              </tr>
             </table>
-
-
-
-
-            
           </div>
           <!--[if mso]>
           </td>
@@ -217,14 +237,6 @@
       </tr>
 
     </table>
-
-    
-      
-        
-      
-    
-
-
   </div>
 </body>
 </html>
