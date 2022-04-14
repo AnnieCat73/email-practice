@@ -78,9 +78,36 @@
     a:hover {color: rgb(209, 198, 198) !important; text-decoration: none!important; }
 
     /*Responsive styles*/
-    @media screen and (max-width: 600px) {
-
+    @media screen and (max-width: 350px) {
+      .three-col .column {
+        max-width: 100% !important;
+      }
     }
+    @media screen and (min-width: 351px) and (max-width: 460px) {
+      .three-col .column {
+        max-width: 50% !important;
+      }
+    }
+    @media screen and (max-width: 460px) {
+      .two-col .column {
+        max-width: 100% !important;
+      }
+      .two-col img {
+        width: 100% !important;
+      }
+    }
+    @media screen and (max-width: 461px) {
+      .three-col .column {
+        max-width: 33.3%;
+      }
+      .sidebar .small {
+        max-width: 16% !important;
+      }
+      .sidebar .large {
+        max-width: 84% !important;
+      }
+    }
+    
 
     /*Dark mode styles*/
     @media (prefers-color-scheme:dark) {
