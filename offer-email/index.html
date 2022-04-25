@@ -120,26 +120,27 @@
 
       
       /*Default styles for links and hovers*/
-      /*a {color: #ffffff !important; font-weight: normal !important; }*/
-     
+      
+      .cta-claim:hover a {background-color: #fff !important;border:1px solid #000 !important;color:#000000 !important;}
       .cta:hover a {color: #333 !important; background-color: #ffffff !important; text-decoration: none!important; }
 
-      /*a:hover {
-        color: #333 !important;
-        font-weight: normal!important;
-        background-color: #ffffff !important;
-        padding: 20px 50px !important;
-        
-      }*/
-
       
-
       /*Responsive styles*/
       @media screen and (max-width: 420px) {
         .three-col .column {max-width:100% !important;}
         .three-col img {width:70% !important;}
         .cta a {padding:0px !important; border:0 !important;font-weight: bold !important; text-decoration: underline !important;font-size: 14px !important;display:inline-block !important;}
-        .cta:hover a {padding:10px !important;}
+        .cta:hover a {padding:10px !important;border: 1px solid #fff !important;font-size: 14px !important;display:inline-block !important;}
+        .footer-links {display:block !important;margin-bottom:20px !important;}
+        .footer-links:last-child {margin-bottom:0 !important;}
+      }
+
+      @media screen and (min-width: 382px) and (max-width: 420px) {
+        .offer {width:35% !important;}
+      }
+
+      @media screen and (max-width: 381px) {
+        .offer {width: 45% !important;}
       }
 
       /*Dark mode styles*/
@@ -148,6 +149,7 @@
           background-color: #111 !important;
         }
       }
+
       [data-ogsb] .dark-blue {
         color: #5f9fff !important;
       }
@@ -241,7 +243,7 @@
                     >
                       When you take another look
                     </p>
-                    <p
+                    <p class="cta-claim"
                       style="
                         margin: 0;
                         font-family: Arial, sans-serif;
@@ -330,7 +332,13 @@
                   <div style="padding:10px 10px 20px 10px;font-size:14px;line-height:18px;">
                     <p style="margin:0 0 20px;font-family: sans-serif;font-size: 14px;"><img src="images/hoodie.jpg" alt="Hoodie" width="100" style="width:200px;max-width:100%;height:auto;"></p>
                     <p style="margin:0 0 20px;font-family: sans-serif;font-size: 14px;font-weight:normal; text-align:center;color:#000000;">Sportstyle Hoodie</p>
-                    <p style="margin:0;text-transform: uppercase;font-size:18px;"><a href="https://example.com/" style="text-decoration: underline;color:#000000;font-weight: normal;line-height: 28px;">Claim offer</a></p>
+                    <table class="offer" align="center" role="presentation" style="width:70%; border: 0; border-spacing: 0;border-bottom: 1px solid #000000;">
+                      <tr>
+                        <td>
+                          <p style="margin:0;text-transform: uppercase;font-size:18px;"><a class="cta" href="https://example.com/" style="text-decoration: none;color:#000000;font-weight: normal;line-height: 28px;">Claim offer</a></p>
+                        </td>
+                      </tr>
+                    </table>
                   </div>
                 </div>
                 <!--[if mso]>
@@ -341,7 +349,13 @@
                   <div style="padding:10px 10px 20px 10px;font-size:14px;line-height:18px;">
                     <p style="margin:0 0 20px;font-family: sans-serif;font-size: 14px;"><img src="images/loopback.jpg" alt="Loopback Zip Hoodie" width="100" style="width:200px;max-width:100%;height:auto;"></p>
                     <p style="margin:0 0 20px;font-family: sans-serif;font-size: 14px;font-weight:normal; text-align:center;color:#000000;">Loopback Zip Hodie</p>
-                    <p style="margin:0;text-transform: uppercase;font-size:18px;"><a href="https://example.com/" style="text-decoration: underline;color:#000000;font-weight: normal;line-height: 28px;">Claim offer</a></p>
+                    <table class="offer" align="center" role="presentation" style="width:70%; border: 0; border-spacing: 0;border-bottom: 1px solid #000000;">
+                      <tr>
+                        <td>
+                          <p style="margin:0;text-transform: uppercase;font-size:18px;"><a class="cta" href="https://example.com/" style="text-decoration: none;color:#000000;font-weight: normal;line-height: 28px;">Claim offer</a></p>
+                        </td>
+                      </tr>
+                    </table>
                   </div>
                 </div>
                 <!--[if mso]>
@@ -352,7 +366,13 @@
                   <div style="padding:10px 10px 20px 10px;font-size:14px;line-height:18px;">
                     <p style="margin:0 0 20px;font-family: sans-serif;font-size: 14px;"><img src="images/coat.jpg" alt="Korben Coat" width="100" style="width:200px;max-width:100%;height:auto;"></p>
                     <p style="margin:0 0 20px;font-family: sans-serif;font-size: 14px;font-weight:normal; text-align:center;color:#000000;">Korben Coat</p>
-                    <p style="margin:0;text-transform: uppercase;font-size:18px;"><a href="https://example.com/" style="text-decoration: underline;color:#000000;font-weight: normal;line-height: 28px;">Claim offer</a></p>
+                    <table class="offer" align="center" role="presentation" style="width:70%; border: 0; border-spacing: 0;border-bottom: 1px solid #000000;">
+                      <tr>
+                        <td>
+                          <p style="margin:0;text-transform: uppercase;font-size:18px;"><a class="cta" href="https://example.com/" style="text-decoration: none;color:#000000;font-weight: normal;line-height: 28px;">Claim offer</a></p>
+                        </td>
+                      </tr>
+                    </table>
                   </div>
                 </div>
                 <!--[if mso]>
@@ -365,7 +385,13 @@
                   <div style="padding:10px 10px 20px 10px;font-size:14px;line-height:18px;">
                     <p style="margin:0 0 20px;font-family: sans-serif;font-size: 14px;"><img src="images/long-coat.jpg" alt="Long Puffer" width="100" style="width:200px;max-width:100%;height:auto;"></p>
                     <p style="margin:0 0 20px;font-family: sans-serif;font-size: 14px;font-weight:normal; text-align:center;color:#000000;">Long Puffer</p>
-                    <p style="margin:0;text-transform: uppercase;font-size:18px;"><a href="https://example.com/" style="text-decoration: underline;color:#000000;font-weight: normal;line-height: 28px;">Claim offer</a></p>
+                    <table class="offer" align="center" role="presentation" style="width:70%; border: 0; border-spacing: 0;border-bottom: 1px solid #000000;">
+                      <tr>
+                        <td>
+                          <p style="margin:0;text-transform: uppercase;font-size:18px;"><a class="cta" href="https://example.com/" style="text-decoration: none;color:#000000;font-weight: normal;line-height: 28px;">Claim offer</a></p>
+                        </td>
+                      </tr>
+                    </table>
                   </div>
                 </div>
                 <!--[if mso]>
@@ -376,7 +402,13 @@
                   <div style="padding:10px 10px 20px 10px;font-size:14px;line-height:18px;">
                     <p style="margin:0 0 20px;font-family: sans-serif;font-size: 14px;"><img src="images/neck-top.jpg" alt="High Neck Top" width="100" style="width:200px;max-width:100%;height:auto;"></p>
                     <p style="margin:0 0 20px;font-family: sans-serif;font-size: 14px;font-weight:normal; text-align:center;color:#000000;">High Neck Top</p>
-                    <p style="margin:0;text-transform: uppercase;font-size:18px;"><a href="https://example.com/" style="text-decoration: underline;color:#000000;font-weight: normal;line-height: 28px;">Claim offer</a></p>
+                    <table class="offer" align="center" role="presentation" style="width:70%; border: 0; border-spacing: 0;border-bottom: 1px solid #000000;">
+                      <tr>
+                        <td>
+                          <p style="margin:0;text-transform: uppercase;font-size:18px;"><a class="cta" href="https://example.com/" style="text-decoration: none;color:#000000;font-weight: normal;line-height: 28px;">Claim offer</a></p>
+                        </td>
+                      </tr>
+                    </table>
                   </div>
                 </div>
                 <!--[if mso]>
@@ -384,10 +416,16 @@
                 <td style="width:200px;padding:10px 10px 20px 10px;" valign="top">
                 <![endif]-->
                 <div class="column" style="width:100%;max-width:200px;display:inline-block;vertical-align:top;">
-                  <div style="padding:10px 10px 20px 10px;font-size:14px;line-height:18px;">
+                  <div style="padding:10px 10px 0px 10px;font-size:14px;line-height:18px;">
                     <p style="margin:0 0 20px;font-family: sans-serif;font-size: 14px;"><img src="images/dress.jpg" alt="V-Neck Dress" width="100" style="width:200px;max-width:100%;height:auto;"></p>
                     <p style="margin:0 0 20px;font-family: sans-serif;font-size: 14px;font-weight:normal; text-align:center;color:#000000;">V-Neck Dress</p>
-                    <p style="margin:0;text-transform: uppercase;font-size:18px;"><a class="cta" href="https://example.com/" style="text-decoration: underline;color:#000000;font-weight: normal;line-height: 28px;">Claim offer</a></p>
+                    <table class="offer" align="center" role="presentation" style="width:70%; border: 0; border-spacing: 0;border-bottom: 1px solid #000000;">
+                      <tr>
+                        <td>
+                          <p style="margin:0;text-transform: uppercase;font-size:18px;"><a class="cta" href="https://example.com/" style="text-decoration: none;color:#000000;font-weight: normal;line-height: 28px;">Claim offer</a></p>
+                        </td>
+                      </tr>
+                    </table>
                   </div>
                 </div>
                 <!--[if mso]>
@@ -459,10 +497,10 @@
                     <p style="margin: 0 0 20px;font-family:Helvetica, Arial, sans-serif; font-size: 15px; font-weight: normal;line-height: 20px;color:#7f7f7f;">*10% off code valid for 2 weeks from receipt of email. Available online on full-price products only, not available on concept collections. For full terms and conditions <a href="https://www.example.com/" style="color:inherit;font-family:Helvetica, Arial, sans-serif; font-size: 15px; font-weight: normal;line-height: 20px;">click here</a>.</p>
                     <p style="margin: 0 0 20px;font-family: Arial, Helvetica, sans-serif; font-size:11px;font-weight: normal; line-height:14px;color:#7f7f7f;"><a href="https://www.example.com/" style="color:inherit;font-family:Helvetica, Arial, sans-serif; font-size: 11px; font-weight: normal;line-height: 26px;text-decoration: none;" >Superdry.com</a> is a site operated by Supergroup Internet Limited Registered in England and Wales under 07139044.Registered office: Unit 60, The Runnings, Cheltenham, Gloucestershire GL519NW, VAT Registration No. GB97482377</p>
                     <p style="margin: 0;font-family: Helvetica, Arial, sans-serif;font-size:11px;">
-                      <a style="text-decoration: none;margin: 0 8px 0px;color:#7f7f7f;" href="https://www.example.com">Online Version</a>
-                      <a style="text-decoration: none;margin: 0 8px 0px;color:#7f7f7f;" href="https://www.example.com">Privacy Policy</a>
-                      <a style="text-decoration: none;margin: 0 8px 0px;color:#7f7f7f;" href="https://www.example.com">Get Help</a>
-                      <a style="text-decoration: none;margin: 0 8px 0px;color:#7f7f7f;" href="https://www.example.com">Unsubscribe</a>
+                      <a class="footer-links" style="text-decoration: none;margin: 0 8px 0px;color:#7f7f7f;" href="https://www.example.com">Online Version</a>
+                      <a class="footer-links" style="text-decoration: none;margin: 0 8px 0px;color:#7f7f7f;" href="https://www.example.com">Privacy Policy</a>
+                      <a class="footer-links" style="text-decoration: none;margin: 0 8px 0px;color:#7f7f7f;" href="https://www.example.com">Get Help</a>
+                      <a class="footer-links" style="text-decoration: none;margin: 0 8px 0px;color:#7f7f7f;" href="https://www.example.com">Unsubscribe</a>
                     </p>
                   </td>
                 </tr>
