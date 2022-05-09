@@ -78,8 +78,39 @@
     a:hover {color: #333; text-decoration: none; }
 
     /*Responsive styles*/
-    @media screen and (max-width: 600px) {
+    @media screen and (max-width: 350px) {
+      .three-col .column {
+        max-width: 100% !important;
+      }
 
+    }
+    @media screen and (max-width: 350px) and (max-width: 460px){
+      .three-col .column {
+        max-width: 50% !important;
+      }
+    }
+    @media screen and (max-width: 460px) {
+      .two-col .column {
+        max-width: 100% !important;
+      }
+      .two-col img {
+        width: 100% !important;
+      }
+
+    }
+    @media screen and (min-width: 461px) {
+      .three-col .clumn {
+        max-width: 33.3% !important;
+      }
+      .two-col .column {
+        max-width: 50% !important;
+      }
+      .sidebar .small {
+        max-width: 16% !important;
+      }
+      .sidebar .large {
+        max-width: 84% !important;
+      }
     }
 
     /*Dark mode styles*/
