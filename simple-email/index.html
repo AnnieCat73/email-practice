@@ -101,13 +101,15 @@
         max-width: 73% !important;
       }
     }
-    @media screen and (max-width: 600px) {
-
-    }
+    
 
     /*Dark mode styles*/
     @media (prefers-color-scheme:dark) {
-      .dark-background:not([class^="x_"]) { background-color:#111 !important; }
+      .dark-background:not([class^="x_"]) { background-color:#333 !important}
+      .dark-section {background-color: #404040 !important;}
+      .dark-text:not([class^="x_"]) { color:#fff !important}
+      .dark-border {border: #f15fb9 3px solid !important}
+      .dark-link {color: #f15fb9 !important}
     }
     [data-ogsb] .dark-blue { color:#5f9fff !important; }
 
@@ -115,7 +117,7 @@
 </head>
 <body id="body" style="margin:0 !important; padding: 0 !important;word-spacing:normal;background-color:#ffffff;">
   <div role="article" aria-roledescription="email" lang="en" style="text-size-adjust:100%;-webkit-text-size-adjust:100%;-ms-text-size-adjust:100%;background-color:#939297;">
-    <table role="presentation" style="width:100%;border:none;border-spacing:0;">
+    <table class="dark-background" role="presentation" style="width:100%;border:none;border-spacing:0;">
       <tr>
         <td align="center" style="padding:0;">
           <!--[if mso]>
@@ -123,14 +125,14 @@
           <tr>
           <td>
           <![endif]-->
-          <table role="presentation" style="width:94%;max-width:600px;border:none;border-spacing:0;text-align:left;font-family:Arial,sans-serif;font-size:16px;line-height:22px;color:#363636;">
+          <table class="dark-section" role="presentation" style="width:94%;max-width:600px;border:none;border-spacing:0;text-align:left;font-family:Arial,sans-serif;font-size:16px;line-height:22px;color:#363636;">
             <tr>
               <td style="padding:40px 30px 30px;text-align:center;font-size:24px;font-weight:bold;">
                 <a href="https://www.example.com/"><img style="width:100px;max-width:100%;height:auto;" src="images/Open Doodles - Thinking Out Loud.png" alt="Logo"></a>
               </td>
             </tr>
             <tr>
-              <td style="background-color: #ffffff;padding:30px;">
+              <td class="dark-section" style="background-color: #ffffff;padding:30px;">
                 <h1 style="margin:0 0 20px;font-size:26px;line-height:32px;font-weight: bold;letter-spacing: -0.02em;">Welcome to our responsive email!</h1>
                 <p style="margin:0;">Lorem ipsum dolor sit amet, consectetur adipiscing elit. In tempus adipiscing felis, sit amet blandit ipsum volutpat sed. Morbi porttitor, <a href="http://www.example.com/" style="color:#e50d70;text-decoration:underline;">eget accumsan dictum</a>, nisi libero ultricies ipsum, in posuere mauris neque at erat.</p>
               </td>
@@ -141,7 +143,7 @@
               </td>
             </tr>
             <tr>
-              <td style="padding:35px 30px 11px 30px;font-size:0;background-color: #ffffff;border-bottom:1px solid #f0f0f5;border-color:rgba(201,201,207,.35);">
+              <td class="dark-section" style="padding:35px 30px 11px 30px;font-size:0;background-color: #ffffff;border-bottom:1px solid #f0f0f5;border-color:rgba(201,201,207,.35);">
                 <!--[if mso]>
                 <table role="presentation" width="100%">
                 <tr>
@@ -167,12 +169,12 @@
               </td>
             </tr>
             <tr>
-              <td style="padding:30px;font-size:24px;line-height:28px;font-weight:bold;background-color: #ffffff;border-bottom:1px solid #f0f0f5;border-color:rgba(201,201,207,.35);">
+              <td class="dark-section" style="padding:30px;font-size:24px;line-height:28px;font-weight:bold;background-color: #ffffff;border-bottom:1px solid #f0f0f5;border-color:rgba(201,201,207,.35);">
                 <a href="http://www.example.com/" style="text-decoration: none;"><img width="540" style="width:540px;max-width: 100%;height:auto;border:none;text-decoration: none;color:#363636;" src="images/composition-23.png" alt=""></a>
               </td>
             </tr>
             <tr>
-              <td style="padding:30px; background-color:#ffffff;">
+              <td class="dark-section" style="padding:30px; background-color:#ffffff;">
                 <p style="margin:0;">Duis sit amet accumsan nibh, varius tincidunt lectus. Quisque commodo, nulla ac feugiat cursus, arcu orci condimentum tellus, vel placerat libero sapien et libero. Suspendisse auctor vel orci nec finibus.</p>
               </td>
             </tr>
