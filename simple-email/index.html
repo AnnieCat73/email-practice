@@ -108,10 +108,10 @@
       .dark-background:not([class^="x_"]) { background-color:#333 !important}
       .dark-section {background-color: #404040 !important;}
       .dark-text:not([class^="x_"]) { color:#fff !important}
-      .dark-border {border: #f15fb9 3px solid !important}
-      .dark-link {color: #f15fb9 !important}
+      .dark-link {background-color: #f15fb9 !important}
+      .dark-link-text {color: #f15fb9 !important}
     }
-    [data-ogsb] .dark-blue { color:#5f9fff !important; }
+    
 
   </style>
 </head>
@@ -133,8 +133,8 @@
             </tr>
             <tr>
               <td class="dark-section" style="background-color: #ffffff;padding:30px;">
-                <h1 style="margin:0 0 20px;font-size:26px;line-height:32px;font-weight: bold;letter-spacing: -0.02em;">Welcome to our responsive email!</h1>
-                <p style="margin:0;">Lorem ipsum dolor sit amet, consectetur adipiscing elit. In tempus adipiscing felis, sit amet blandit ipsum volutpat sed. Morbi porttitor, <a href="http://www.example.com/" style="color:#e50d70;text-decoration:underline;">eget accumsan dictum</a>, nisi libero ultricies ipsum, in posuere mauris neque at erat.</p>
+                <h1 class="dark-text" style="margin:0 0 20px;font-size:26px;line-height:32px;font-weight: bold;letter-spacing: -0.02em;">Welcome to our responsive email!</h1>
+                <p class="dark-text" style="margin:0;">Lorem ipsum dolor sit amet, consectetur adipiscing elit. In tempus adipiscing felis, sit amet blandit ipsum volutpat sed. Morbi porttitor, <a class="dark-link-text" href="http://www.example.com/" style="color:#e50d70;text-decoration:underline;">eget accumsan dictum</a>, nisi libero ultricies ipsum, in posuere mauris neque at erat.</p>
               </td>
             </tr>
             <tr>
@@ -157,9 +157,9 @@
                 <td style="width:395px;padding-bottom:20px;" valign="top">
                 <![endif]-->
                   <div class="col-lge" style="display:inline-block;width:100%;max-width:395px;vertical-align:top;padding-bottom:20px;font-family:Arial,sans-serif;font-size:16px;line-height:22px;color:#363636;">
-                    <p style="margin-top:0;margin-bottom:12px;">Nullam mollis sapien vel cursus fermentum. Integer porttitor augue id ligula facilisis pharetra. In eu ex et elit ultricies ornare nec ac ex. Mauris sapien massa, placerat non venenatis et, tincidunt eget leo.</p>
-                    <p style="margin-top:0;margin-bottom:12px;">Nullam mollis sapien vel cursus fermentum. Integer porttitor augue id ligula facilisis pharetra. In eu ex et elit ultricies ornare nec ac ex. Mauris sapien massa, placerat non venenatis et, tincidunt eget leo.</p>
-                    <p style="margin:0;"><a href="https://example.com/" style="background: #ff3884; text-decoration: none; padding: 10px 25px; color: #ffffff; border-radius: 4px; display:inline-block; mso-padding-alt:0;text-underline-color:#ff3884"><!--[if mso]><i style="letter-spacing: 25px;mso-font-width:-100%;mso-text-raise:20pt">&nbsp;</i><![endif]--><span style="mso-text-raise:10pt;font-weight:bold;">Claim yours now</span><!--[if mso]><i style="letter-spacing: 25px;mso-font-width:-100%">&nbsp;</i><![endif]--></a></p>
+                    <p class="dark-text" style="margin-top:0;margin-bottom:12px;">Nullam mollis sapien vel cursus fermentum. Integer porttitor augue id ligula facilisis pharetra. In eu ex et elit ultricies ornare nec ac ex. Mauris sapien massa, placerat non venenatis et, tincidunt eget leo.</p>
+                    <p class="dark-text" style="margin-top:0;margin-bottom:12px;">Nullam mollis sapien vel cursus fermentum. Integer porttitor augue id ligula facilisis pharetra. In eu ex et elit ultricies ornare nec ac ex. Mauris sapien massa, placerat non venenatis et, tincidunt eget leo.</p>
+                    <p style="margin:0;"><a class="dark-link" href="https://example.com/" style="background: #ff3884; text-decoration: none; padding: 10px 25px; color: #ffffff; border-radius: 4px; display:inline-block; mso-padding-alt:0;text-underline-color:#ff3884"><!--[if mso]><i style="letter-spacing: 25px;mso-font-width:-100%;mso-text-raise:20pt">&nbsp;</i><![endif]--><span style="mso-text-raise:10pt;font-weight:bold;">Claim yours now</span><!--[if mso]><i style="letter-spacing: 25px;mso-font-width:-100%">&nbsp;</i><![endif]--></a></p>
                   </div>
                 <!--[if mso]>
                 </td>
@@ -175,7 +175,7 @@
             </tr>
             <tr>
               <td class="dark-section" style="padding:30px; background-color:#ffffff;">
-                <p style="margin:0;">Duis sit amet accumsan nibh, varius tincidunt lectus. Quisque commodo, nulla ac feugiat cursus, arcu orci condimentum tellus, vel placerat libero sapien et libero. Suspendisse auctor vel orci nec finibus.</p>
+                <p class="dark-text" style="margin:0;">Duis sit amet accumsan nibh, varius tincidunt lectus. Quisque commodo, nulla ac feugiat cursus, arcu orci condimentum tellus, vel placerat libero sapien et libero. Suspendisse auctor vel orci nec finibus.</p>
               </td>
             </tr>
             <tr>
