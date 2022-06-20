@@ -26,6 +26,15 @@
 
         a:hover { color: #000 !important;}
         button:hover {background-color: #000 !important;text-decoration: none !important;}
+
+        /*Dark mode styles*/
+        @media (prefers-color-scheme:dark) {
+            .dark-background:not([class^="x_"]) { background-color:#333 !important;}
+            .dark-text:not([class^="x_"]) { color:#ddd !important}
+            .dark-heading:not([class^="x_"]) { color:#fff !important}
+            .dark-link {background-color: #B200FD !important}
+            
+        }
        
         @media (max-width: 770px) {
             .col { max-width: 100% !important;}
@@ -41,12 +50,12 @@
     </style>
 </head>
 <body style="margin:0;padding:0;word-spacing:normal;">
-    <div role="article" aria-roledescription="email" lang="en" style="text-size-adjust:100%;-webkit-text-size-adjust:100%;-ms-text-size-adjust:100%;background-color:white;">
-        <table role="presentation" style="width:100%;border:none;border-spacing:0;">
+    <div class="dark-background" role="article" aria-roledescription="email" lang="en" style="text-size-adjust:100%;-webkit-text-size-adjust:100%;-ms-text-size-adjust:100%;background-color:white;">
+        <table  role="presentation" style="width:100%;border:none;border-spacing:0;">
             <tr>
-                <td align="center" style="padding:0;">
+                <td align="center" style="padding:0 0 70px 0;">
                    <!--[if mso]>
-                    <table role="presentation" align="center" style="width:600px;">
+                    <table role="presentation" align="center" style="width:600px;padding-bottom:70px;">
                     <tr>
                     <td>
                     <![endif]-->
@@ -58,9 +67,9 @@
                             </tr>
                             <tr>
                                 <td style="text-align: center;">
-                                    <h1 style="margin:0 0 90px;font-size:45px; font-weight:800;line-height:32px;color: #000;">All New: Accessibility</h1>
-                                    <h2 style="margin: 0 0 40px;font-size:26px;line-height:32px;font-weight: 600;color:#000;">Accessibility baked-in for better user experiences</h2>
-                                    <p class="main-text" style="margin:0;font-size: 18px;font-weight: normal; color:#2b2b2b;text-align: left;">Lorem ipsum dolor sit amet consectetur adipisicing elit. Beatae laborum, eveniet asperiores atque repellendus quo nostrum eos enim eum illum non ad quidem ipsa dolore esse, reprehenderit obcaecati! Vel, quas.</p>
+                                    <h1 class="dark-heading" style="margin:0 0 90px;font-size:45px; font-weight:800;line-height:32px;color: #000;">All New: Accessibility</h1>
+                                    <h2 class="dark-heading" style="margin: 0 0 40px;font-size:26px;line-height:32px;font-weight: 600;color:#000;">Accessibility baked-in for better user experiences</h2>
+                                    <p class="dark-text main-text" style="margin:0;font-size: 18px;font-weight: normal; color:#2b2b2b;text-align: left;">Lorem ipsum dolor sit amet consectetur adipisicing elit. Beatae laborum, eveniet asperiores atque repellendus quo nostrum eos enim eum illum non ad quidem ipsa dolore esse, reprehenderit obcaecati! Vel, quas.</p>
                                 </td>
                             </tr>
                             <tr>
@@ -71,7 +80,7 @@
                                     <td style="width:360px;" align="left" valign="top">
                                     <![endif]-->
                                         <div class="col" style="display:inline-block;width:100%;max-width:360px;vertical-align:top;text-align:left;line-height:2;text-align:center;">
-                                            <p style="margin:0; color: #000;font-size: 20px;">😁 Happier subscribers!<br>
+                                            <p class="dark-text" style="margin:0; color: #000;font-size: 20px;">😁 Happier subscribers!<br>
                                                 👌 Touchable interface!<br>
                                                 ❤️ No more frustration!<br>
                                             </p>
@@ -81,7 +90,7 @@
                                     <td style="width:360px;" valign="top">
                                     <![endif]-->
                                         <div class="col" style="display:inline-block;width:100%;max-width:360px;vertical-align:top;text-align:center;line-height:2;">
-                                           <p style="margin:0; color: #000;font-size: 20px;">💌 Semantic email markup!<br>
+                                           <p class="dark-text" style="margin:0; color: #000;font-size: 20px;">💌 Semantic email markup!<br>
                                                 🦻 Screenreader friendly!<br>
                                                 💬 Commented for easy use!
                                             </p>
@@ -100,8 +109,8 @@
                             </tr>
                             <tr>
                                 <td class="footer" style="font-size: 16px;font-weight: 400; line-height: 24px;">
-                                    <p  style="margin: 0 0 20px;">You received this email because you care about creating more accessible experiences for people. Don't worry, <a  style="text-decoration: underline;color: #B200FD;font-weight: bold;" href="https://example.com/">you can unsubscribe here</a>.</p>
-                                    <address style="font-style:normal;">
+                                    <p  class="dark-text" style="margin: 0 0 20px;">You received this email because you care about creating more accessible experiences for people. Don't worry, <a  style="text-decoration: underline;color: #B200FD;font-weight: bold;" href="https://example.com/">you can unsubscribe here</a>.</p>
+                                    <address class="dark-text" style="font-style:normal;">
                                         <strong>Your Friends:</strong>
                                         1234 Main Street, Anywhere, US 56789
                                     </address>
