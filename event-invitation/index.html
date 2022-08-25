@@ -78,10 +78,28 @@
     a:hover {color: #333; text-decoration: none; }
 
     /*Responsive styles*/
+    /* MOBILE STYLES */
     @media screen and (max-width: 600px) {
+      .img-max {
+        width: 100% !important;
+        max-width: 100% !important;
+        height: auto !important;
+      }
 
+      .max-width {
+        max-width: 100% !important;
+      }
+
+      .mobile-wrapper {
+        width: 85% !important;
+        max-width: 85% !important;
+      }
+
+      .mobile-padding {
+        padding-left: 5% !important;
+        padding-right: 5% !important;
+      }
     }
-
     /*Dark mode styles*/
     @media (prefers-color-scheme:dark) {
       .dark-background:not([class^="x_"]) { background-color:#111 !important; }
